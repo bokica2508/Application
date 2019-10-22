@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Application</h1>
+        <p id="confirm">Please complete the form below</p>
+        <div class= "container">
+            <form action="index.html" method="POST" name ="form" class="form" onsubmit="return myFunction()">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="">Name:</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="name" value="" required id="name">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-3">
+                            <label for="">Email:</label>
+                        </div>
+                            <div class="col-9">
+                                <input type="email" name="email" value=""required>
+                            </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for=""> Age:</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="number" name="age" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="">Phone number</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="text" name="phoneNumber" value="" class="numberValidate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <label for="">Preferred Way of Communication</label>
+                    </div>
+                    <div class="col-8" id="radio">
+                        <input type="radio" name="communicationWay" id="check">E-mail<br>
+                        <input type="radio" name="communicationWay" id="check">Phone
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                    <label for="">English level</label>
+                    <select name="english" id="" required>
+                        <option value="">None</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                      <label for="">Available to Start </label>
+                    </div>
+                    <div class="col-8">
+                        <input type="date" name="" id="" required>
+                        <span class="validity"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5>Technical Skills and Courses</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h5>Short Personal Presentation</h5>
+                        <p style="text-align: center;">Explain  your reasons for joining the program</p>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-12">
+                            <textarea name="" id="" cols="30" rows="5"></textarea>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Study from home</div>
+                    <div class="col-9">
+                        <input type="checkbox" name="study" id="">Yes <br>
+                        <input type="checkbox" name="study" id="">No
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-9">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <p id="result"></p>
+<script>
+ 
+
+function myFunction() {
+  var x = document.forms["form"]["phoneNumber"].value;
+  if (x == "" || isNaN(x)) 
+    {
+        alert("Phone number must be filled out like a number");
+        return false;
+    }
+    var y=document.getElementById("check").checked;
+  if(y!=true)
+    {
+        alert("You must checked prefered way of comunication!")
+    }
+}
+
+
+
+
+</script>
+</body>
+</html>

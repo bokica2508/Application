@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1,h5{
+    text-align: center;
+}
+#confirm
+{
+    text-align: center;
+}
+.form
+{
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+.col-1
+{
+  width:8.33%;
+}
+.col-2 
+{
+  width:16.66%;
+  float: left;
+}
+.col-3 
+{
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+
+}
+.col-4 
+{
+  width:33.32%;
+  float: left;
+  margin-top: 6px;
+}
+.col-5
+{
+  width:41.65%;
+}
+.col-6 
+{
+  width:50%;
+  float: left;
+}
+.col-7 
+{
+  width:58.31%;
+}
+.col-8 
+{
+  width:66.64%;
+  float: right;
+  margin-top: 6px;
+}
+.col-9 
+{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  padding-bottom:5px;
+}
+.col-10 
+{
+  width:83.33%;
+}
+.col-11 
+{
+  width:91.63%;
+}
+.col-12 
+{
+  width:100%;
+  float: left;
+  font-size: 20px;
+  
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form input[type=radio], input[type=checkbox]
+{
+    margin-left: 10px;
+}
+textarea
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:135px;
+}
+.form input[type=date]
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+select
+{
+    margin-left: 10px;
+}
+span::after {
+    padding-left: 5px;
+  }
+  
+  input:invalid + span::after {
+    content: '✖';
+  }
+  
+  input:valid+span::after {
+    content: '✓';
+  }
